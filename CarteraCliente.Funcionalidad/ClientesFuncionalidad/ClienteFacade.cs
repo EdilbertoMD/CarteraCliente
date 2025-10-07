@@ -60,14 +60,20 @@ public class ClienteFacade(ApplicationDbContext context):IClienteFacade
         
     }
 
-    public Task<bool> EliminarAsync(int id)
+    public async Task<Cliente> EliminarAsync(int id)
     {
-        throw new NotImplementedException();
+        var cliente = await ObtenerPorIdAsync(id);
+        cliente.DesactivarCliente();
+        await context.SaveChangesAsync();
+        return cliente;
     }
 
-    public Task<bool> ActivarAsync(int id)
+    public async Task<Cliente> ActivarAsync(int id)
     {
-        throw new NotImplementedException();
+        var cliente = await ObtenerPorIdAsync(id);
+        cliente.ActivarCliente();
+        await context.SaveChangesAsync();
+        return cliente;
     }
     
     private void ValidarClienteDuplicadoAsync(string email)
