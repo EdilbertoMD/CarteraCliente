@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using AutoMapper;
 using CarteraCliente.Api.DTO;
 using CarteraCliente.Funcionalidad.ClientesFuncionalidad;

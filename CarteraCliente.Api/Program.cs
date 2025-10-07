@@ -1,5 +1,4 @@
 using CarteraCliente.Api.Mappers;
-using CarteraCliente.Datos;
 using CarteraCliente.Datos.Data;
 using CarteraCliente.Funcionalidad.ClientesFuncionalidad;
 using Microsoft.EntityFrameworkCore;
