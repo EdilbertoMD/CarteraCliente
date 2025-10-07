@@ -1,0 +1,14 @@
+Directorios de compilación esenciales
+[Bb]in/
+[Oo]bj/
+
+Caché de paquetes NuGet
+[Pp]ackages/
+
+Archivos de depuración y caché de Visual Studio / IDEs
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+
