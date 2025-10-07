@@ -1,0 +1,14 @@
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\bin\Debug\net9.0\CarteraCliente.Datos.deps.json
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\bin\Debug\net9.0\CarteraCliente.Datos.runtimeconfig.json
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\bin\Debug\net9.0\CarteraCliente.Datos.dll
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\bin\Debug\net9.0\CarteraCliente.Datos.pdb
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.csproj.AssemblyReference.cache
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.AssemblyInfoInputs.cache
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.AssemblyInfo.cs
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.csproj.CoreCompileInputs.cache
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.dll
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\refint\CarteraCliente.Datos.dll
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.pdb
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.genruntimeconfig.cache
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\ref\CarteraCliente.Datos.dll

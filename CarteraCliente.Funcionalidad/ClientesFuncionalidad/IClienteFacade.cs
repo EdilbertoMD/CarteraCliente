@@ -1,0 +1,14 @@
+using CarteraCliente.Datos.Modelos;
+
+namespace CarteraCliente.Funcionalidad.ClientesFuncionalidad;
+
+public interface IClienteFacade
+{
+    public Task<Cliente> GuardarAsync(string nombre, string primerApellido, string segundoApellido, string codigoPais, string email, string telefono, string direccion);
+    public Task<List<Cliente>> ObtenerTodosAsync();
+    public Task<Cliente> ObtenerPorIdAsync(int id);
+    public Task<Cliente> ActualizarAsync(int id, string nombre, string primerApellido, string segundoApellido, string codigoPais, string email, string telefono, string direccion);
+    public Task<bool> EliminarAsync(int id);
+    public Task<bool> ActivarAsync(int id);
+    
+}

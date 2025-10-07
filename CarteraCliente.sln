@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarteraCliente.Api", "CarteraCliente.Api\CarteraCliente.Api.csproj", "{2B84C1CC-8469-4D12-800B-688101830553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarteraCliente.Datos", "CarteraCliente.Datos\CarteraCliente.Datos.csproj", "{A009A101-47A7-4CE3-B5A3-3A4325E41329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarteraCliente.Funcionalidad", "CarteraCliente.Funcionalidad\CarteraCliente.Funcionalidad.csproj", "{67B7DAB4-F5FB-4A97-BEC3-9A4687FD0415}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B84C1CC-8469-4D12-800B-688101830553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B84C1CC-8469-4D12-800B-688101830553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B84C1CC-8469-4D12-800B-688101830553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B84C1CC-8469-4D12-800B-688101830553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A009A101-47A7-4CE3-B5A3-3A4325E41329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A009A101-47A7-4CE3-B5A3-3A4325E41329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A009A101-47A7-4CE3-B5A3-3A4325E41329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A009A101-47A7-4CE3-B5A3-3A4325E41329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B7DAB4-F5FB-4A97-BEC3-9A4687FD0415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B7DAB4-F5FB-4A97-BEC3-9A4687FD0415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B7DAB4-F5FB-4A97-BEC3-9A4687FD0415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B7DAB4-F5FB-4A97-BEC3-9A4687FD0415}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
