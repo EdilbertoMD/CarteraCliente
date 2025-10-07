@@ -12,3 +12,4 @@ C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\ne
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.pdb
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.genruntimeconfig.cache
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\ref\CarteraCliente.Datos.dll
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Datos\obj\Debug\net9.0\CarteraCliente.Datos.sourcelink.json

@@ -16,6 +16,7 @@ builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 //Inyecta funcionalidad
 builder.Services.AddScoped<IClienteFacade, ClienteFacade>(); 
+builder.Services.AddScoped<ICuentaBancariaFacade, CuentaBancariaFacade>();
 
 
 builder.Services.AddControllers();

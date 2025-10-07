@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarteraCliente.Datos.Modelos;
 
@@ -50,6 +51,8 @@ public class Cliente
     public string Direccion { get; private set; }
     [Required]
     public bool Activo { get; private set; }
+    [NotMapped]
+    public string NombreCompleto => $"{Nombre} {PrimerApellido} {SegundoApellido}";
 
     public List<CuentaBancaria> CuentaBancarias { get; private set; } = new();
 

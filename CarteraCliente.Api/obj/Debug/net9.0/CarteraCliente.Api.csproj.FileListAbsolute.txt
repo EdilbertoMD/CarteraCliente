@@ -157,3 +157,4 @@ C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Api\bin\Debug\net9
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Api\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Api\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Api\obj\Debug\net9.0\CarteraCliente.Api.sourcelink.json

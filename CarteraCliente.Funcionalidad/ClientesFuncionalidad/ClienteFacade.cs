@@ -9,7 +9,7 @@ public class ClienteFacade(ApplicationDbContext context):IClienteFacade
     public async Task<Cliente> GuardarAsync(string nombre, string primerApellido, string segundoApellido, string codigoPais, string email, string telefono, string direccion)
     {
         // Validaciones
-        ValidarClienteDuplicadoAsync(email);
+        await ValidarClienteDuplicadoAsync(email, telefono);
         // Nuevo cliente
         var cliente = new Cliente(nombre, primerApellido, segundoApellido, codigoPais, email, telefono, direccion);
         // Agrega al contexto
@@ -43,6 +43,8 @@ public class ClienteFacade(ApplicationDbContext context):IClienteFacade
     {
         // Obtener cliente por id
         var cliente = await ObtenerPorIdAsync(id: id);
+        // Validar si existe un cliente con el mismo email y telefono
+        await ValidarClienteDuplicadoAsync(email, telefono, cliente.Id);
         // Actualizar cliente
         cliente.ActualizarCliente(
             nuevoNombre: nombre,
@@ -76,12 +78,14 @@ public class ClienteFacade(ApplicationDbContext context):IClienteFacade
         return cliente;
     }
     
-    private void ValidarClienteDuplicadoAsync(string email)
+    private async Task ValidarClienteDuplicadoAsync(string email, string telefono, int? id = 0)
     {
         // Validar si existe un cliente con el mismo email
-        var cliente = context.Clientes.FirstOrDefaultAsync(x=>x.Email == email);
+        var cliente = await context.Clientes.FirstOrDefaultAsync(x=>(x.Email == email || x.Telefono == telefono) && x.Id != id);
         // Si existe un cliente con el mismo email, lanzar excepcion
-        if (cliente != null)
-            throw new Exception($"Ya existe un cliente con el {email} ");
+        if (cliente?.Email == email)
+            throw new Exception($"Ya existe un cliente con el email {email}");
+        else if (cliente?.Telefono == telefono)
+            throw new Exception($"Ya existe un cliente con el telefono {telefono}");
     }
 }

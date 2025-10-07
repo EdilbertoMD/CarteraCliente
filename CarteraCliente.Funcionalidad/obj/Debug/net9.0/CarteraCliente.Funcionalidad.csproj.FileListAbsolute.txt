@@ -13,3 +13,4 @@ C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Funcionalidad\obj\
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Funcionalidad\obj\Debug\net9.0\refint\CarteraCliente.Funcionalidad.dll
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Funcionalidad\obj\Debug\net9.0\CarteraCliente.Funcionalidad.pdb
 C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Funcionalidad\obj\Debug\net9.0\ref\CarteraCliente.Funcionalidad.dll
+C:\Users\Edilb\RiderProjects\ApiCarteraCliente\CarteraCliente.Funcionalidad\obj\Debug\net9.0\CarteraCliente.Funcionalidad.sourcelink.json
