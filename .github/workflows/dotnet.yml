@@ -1,7 +1,6 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+name: .NET CI/CD a Azure App Service
 
 on:
   push:
@@ -9,20 +8,65 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  AZURE_WEBAPP_PACKAGE_PATH: '.' # Directorio de publicación relativo
+  PROJECT_FILE_PATH: 'CarteraCliente.Api/CarteraCliente.Api.csproj' # 🚨 REEMPLAZA: Ruta a tu archivo .csproj (e.g., CarteraCliente.Api/CarteraCliente.Api.csproj)
+  AZURE_WEBAPP_NAME: 'ejemplotecomnetazure' # 🚨 REEMPLAZA: Nombre exacto de tu App Service en Azure
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+        
     - name: Restore dependencies
       run: dotnet restore
+      
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --configuration Release --no-restore
+      
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      
+    # PASO 1: Publicar la aplicación (genera los archivos .dll listos para Azure)
+    - name: Publicar la Aplicación para Despliegue
+      run: dotnet publish ${{ env.PROJECT_FILE_PATH }} --configuration Release --no-build --output ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
+      
+    # PASO 2: Subir Artefactos (el paquete compilado para que el job de 'deploy' lo use)
+    - name: Subir Artefactos de Publicación
+      uses: actions/upload-artifact@v4
+      with:
+        name: api-build-artifact
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build # ⬅️ Solo se ejecuta si la compilación y las pruebas son exitosas
+    
+    # Define el entorno en GitHub
+    environment: 
+      name: Produccion 
+      url: https://${{ env.AZURE_WEBAPP_NAME }}.azurewebsites.net 
+
+    steps:
+    # 1. Descargar los archivos compilados del job 'build'
+    - name: Descargar Artefacto Compilado
+      uses: actions/download-artifact@v4
+      with:
+        name: api-build-artifact
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
+
+    # 2. Desplegar a Azure App Service
+    - name: Desplegar a Azure App Service
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        slot-name: 'Production'
+        # 🚨 CLAVE SECRETA: Usa el Secreto que debes configurar en GitHub
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} 
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/publish
