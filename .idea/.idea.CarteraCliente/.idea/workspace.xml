@@ -11,16 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e1314c4-ec81-4749-9a53-564dc7df3055" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CarteraCliente.Api/Controllers/CuentaBancariaController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/CuentaBancariaFacade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarteraCliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarteraCliente/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/CarteraCliente.db" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/CarteraCliente.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/CarteraCliente.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/CarteraCliente.db-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/Controllers/ClienteController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/Controllers/ClienteController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/DTO/ClienteDtoRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/DTO/ClienteDtoRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/DTO/ClienteDtoResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/DTO/ClienteDtoResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/DTO/CuentaBancariaDtoResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/DTO/CuentaBancariaDtoResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/DTO/CuentaBancariaDtoRquest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/DTO/CuentaBancariaDtoRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/Controllers/CuentaBancariaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/Controllers/CuentaBancariaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/bin/Debug/net9.0/CarteraCliente.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/bin/Debug/net9.0/CarteraCliente.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/bin/Debug/net9.0/CarteraCliente.Api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/bin/Debug/net9.0/CarteraCliente.Api.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/bin/Debug/net9.0/CarteraCliente.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/bin/Debug/net9.0/CarteraCliente.Api.pdb" afterDir="false" />
@@ -31,30 +27,25 @@
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/CarteraCliente.Api.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/ref/CarteraCliente.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/ref/CarteraCliente.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/refint/CarteraCliente.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/refint/CarteraCliente.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/rjsmrazor.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/rpswa.dswa.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Api/obj/Debug/net9.0/rpswa.dswa.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/Modelos/Cliente.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/Modelos/Cliente.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/bin/Debug/net9.0/CarteraCliente.Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/bin/Debug/net9.0/CarteraCliente.Datos.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/bin/Debug/net9.0/CarteraCliente.Datos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/bin/Debug/net9.0/CarteraCliente.Datos.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/CarteraCliente.Datos.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/ref/CarteraCliente.Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/ref/CarteraCliente.Datos.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/refint/CarteraCliente.Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Datos/obj/Debug/net9.0/refint/CarteraCliente.Datos.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/ClienteFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/ClienteFacade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/ICuentaBancaria.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/ICuentaBancariaFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/CuentaBancariaFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/ClientesFuncionalidad/CuentaBancariaFacade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/bin/Debug/net9.0/CarteraCliente.Datos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/bin/Debug/net9.0/CarteraCliente.Datos.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/bin/Debug/net9.0/CarteraCliente.Datos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/bin/Debug/net9.0/CarteraCliente.Datos.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/bin/Debug/net9.0/CarteraCliente.Funcionalidad.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/bin/Debug/net9.0/CarteraCliente.Funcionalidad.dll" afterDir="false" />
@@ -62,10 +53,9 @@
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/CarteraCliente.Funcionalidad.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/ref/CarteraCliente.Funcionalidad.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/ref/CarteraCliente.Funcionalidad.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/refint/CarteraCliente.Funcionalidad.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CarteraCliente.Funcionalidad/obj/Debug/net9.0/refint/CarteraCliente.Funcionalidad.dll" afterDir="false" />
     </list>
@@ -121,7 +111,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/CC-02",
+    "git-widget-placeholder": "feature/CC-03",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -233,7 +223,7 @@
       <workItem from="1759785665653" duration="4360000" />
       <workItem from="1759792696370" duration="6612000" />
       <workItem from="1759801281267" duration="233000" />
-      <workItem from="1759801520688" duration="8887000" />
+      <workItem from="1759801520688" duration="10728000" />
     </task>
     <servers />
   </component>

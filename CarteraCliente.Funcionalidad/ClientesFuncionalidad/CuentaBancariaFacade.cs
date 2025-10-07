@@ -42,6 +42,8 @@ public class CuentaBancariaFacade(ApplicationDbContext context, IClienteFacade c
     public async Task<CuentaBancaria> ActualizarAsync(int clienteId, int cuentaBancariaId, string numeroCuenta, string tipoCuenta, string banco)
     {
         var cuentaBancaria = await ObtenerPorIdAsync(clienteId: clienteId, cuentaBancariaId: cuentaBancariaId);
+        // Valida si esta activa
+        ValidarCuentaBancaraActiva(cuentaBancaria: cuentaBancaria);
         cuentaBancaria.ActualizarCuentaBancaria(numeroCuenta, tipoCuenta, banco);
         await context.SaveChangesAsync();
         return cuentaBancaria;
@@ -50,6 +52,8 @@ public class CuentaBancariaFacade(ApplicationDbContext context, IClienteFacade c
     public async Task<CuentaBancaria> EliminarAsync(int clienteId, int cuentaBancariaId)
     {
         var cuentaBancaria = await ObtenerPorIdAsync(clienteId: clienteId, cuentaBancariaId: cuentaBancariaId);
+        // Valida si esta activa
+        ValidarCuentaBancaraActiva(cuentaBancaria: cuentaBancaria);
         cuentaBancaria.DesactivarCuentaBancaria();
         await context.SaveChangesAsync();
         return cuentaBancaria;
@@ -61,5 +65,11 @@ public class CuentaBancariaFacade(ApplicationDbContext context, IClienteFacade c
         cuentaBancaria.ActivarCuentaBancaria();
         await context.SaveChangesAsync();
         return cuentaBancaria;
+    }
+
+    private void ValidarCuentaBancaraActiva(CuentaBancaria cuentaBancaria)
+    {
+        if (!cuentaBancaria.Activo)
+            throw new Exception("La cuenta bancaria no esta activa");
     }
 }

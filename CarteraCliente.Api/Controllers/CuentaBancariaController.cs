@@ -32,7 +32,6 @@ public class CuentaBancariaController(ICuentaBancariaFacade facade, IMapper mapp
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             return BadRequest(error: e.Message);
         }
     }
@@ -56,7 +55,10 @@ public class CuentaBancariaController(ICuentaBancariaFacade facade, IMapper mapp
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
@@ -75,7 +77,10 @@ public class CuentaBancariaController(ICuentaBancariaFacade facade, IMapper mapp
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
@@ -94,7 +99,6 @@ public class CuentaBancariaController(ICuentaBancariaFacade facade, IMapper mapp
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             return BadRequest(error: e.Message);
         }
     }
@@ -113,7 +117,10 @@ public class CuentaBancariaController(ICuentaBancariaFacade facade, IMapper mapp
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
@@ -132,7 +139,10 @@ public class CuentaBancariaController(ICuentaBancariaFacade facade, IMapper mapp
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }

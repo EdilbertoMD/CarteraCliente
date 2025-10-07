@@ -36,7 +36,6 @@ public class ClienteController(IClienteFacade facade, IMapper mapper) : Controll
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             return BadRequest(error: e.Message);
         }
     }
@@ -63,7 +62,10 @@ public class ClienteController(IClienteFacade facade, IMapper mapper) : Controll
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
@@ -82,7 +84,10 @@ public class ClienteController(IClienteFacade facade, IMapper mapper) : Controll
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
@@ -101,7 +106,6 @@ public class ClienteController(IClienteFacade facade, IMapper mapper) : Controll
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             return BadRequest(error: e.Message);
         }
     }
@@ -120,7 +124,10 @@ public class ClienteController(IClienteFacade facade, IMapper mapper) : Controll
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
@@ -139,7 +146,10 @@ public class ClienteController(IClienteFacade facade, IMapper mapper) : Controll
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            if (e.Message.Contains("no existe"))
+            {
+                return NotFound(e.Message);
+            }
             return BadRequest(error: e.Message);
         }
     }
