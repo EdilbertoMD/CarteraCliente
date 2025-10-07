@@ -1,5 +1,4 @@
 using CarteraCliente.Api.Mappers;
-using CarteraCliente.Datos;
 using CarteraCliente.Datos.Data;
 using CarteraCliente.Funcionalidad.ClientesFuncionalidad;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +15,7 @@ builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 //Inyecta funcionalidad
 builder.Services.AddScoped<IClienteFacade, ClienteFacade>(); 
+builder.Services.AddScoped<ICuentaBancariaFacade, CuentaBancariaFacade>();
 
 
 builder.Services.AddControllers();

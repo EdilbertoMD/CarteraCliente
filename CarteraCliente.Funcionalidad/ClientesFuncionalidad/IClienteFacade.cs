@@ -8,7 +8,7 @@ public interface IClienteFacade
     public Task<List<Cliente>> ObtenerTodosAsync();
     public Task<Cliente> ObtenerPorIdAsync(int id);
     public Task<Cliente> ActualizarAsync(int id, string nombre, string primerApellido, string segundoApellido, string codigoPais, string email, string telefono, string direccion);
-    public Task<bool> EliminarAsync(int id);
-    public Task<bool> ActivarAsync(int id);
+    public Task<Cliente> EliminarAsync(int id);
+    public Task<Cliente> ActivarAsync(int id);
     
 }

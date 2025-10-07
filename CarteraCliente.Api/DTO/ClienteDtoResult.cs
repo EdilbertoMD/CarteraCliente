@@ -2,19 +2,19 @@ namespace CarteraCliente.Api.DTO;
 
 public class ClienteDtoResult
 {
-    public int Id { get; private set; }
-    public string Nombre { get; private set; }
-    public string PrimerApellido { get; private set; }
-    public string SegundoApellido { get; private set; }
+    public int Id { get; set; }
+    public string Nombre { get; set; }
+    public string PrimerApellido { get; set; }
+    public string SegundoApellido { get; set; }
     
-    public string CodigoPais { get; private set; }
+    public string CodigoPais { get; set; }
     
-    public string Email { get; private set; }
+    public string Email { get; set; }
     
-    public string Telefono { get; private set; }
+    public string Telefono { get; set; }
     
-    public string Direccion { get; private set; }
+    public string Direccion { get; set; }
     
-    public bool Activo { get; private set; }
+    public bool Activo { get; set; }
     
 }
